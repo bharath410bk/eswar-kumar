@@ -19,18 +19,26 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="nav container">
+    <nav class="nav">
       <a class="brand" href="#hero">
-        <span>🎙️</span>
-        <span>SATHYA</span> <span class="brand-badge">STUDIO</span>
+        <span class="brand-icon">🎙️</span>
+        <span class="brand-name">SATHYA <span class="brand-badge">STUDIO</span></span>
       </a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="#services">Services</a>
         <a href="#reviews">Reviews</a>
         <a href="#pricing">Packages</a>
         <a href="#contact">Location</a>
+        <a class="mobile-cta" href="tel:+919488534631">Book Slot</a>
       </div>
-      <a class="nav-cta" href="tel:+919488534631">Book Slot</a>
+      <div class="nav-right">
+        <a class="nav-cta" href="tel:+919488534631">Book Slot</a>
+        <button class="nav-hamburger" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
     <main>
@@ -280,5 +288,6 @@
     <footer>
       <p>&copy; 2026 Sathya Musical Studio · All Rights Reserved · Muthukadai, Ranipet, Tamil Nadu</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,13 +1,14 @@
-const button = document.querySelector("#theme-toggle");
-const saved = localStorage.getItem("theme");
+const toggleBtn = document.getElementById('mobile-toggle');
+const navLinks = document.getElementById('nav-links');
 
-if (saved) {
-  document.documentElement.dataset.theme = saved;
+if (toggleBtn && navLinks) {
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
 }
-
-button?.addEventListener("click", () => {
-  const next =
-    document.documentElement.dataset.theme === "light" ? "dark" : "light";
-  document.documentElement.dataset.theme = next;
-  localStorage.setItem("theme", next);
-});
