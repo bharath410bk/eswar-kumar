@@ -3,115 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bharath Kumar AR S — Website Developer and Software Developer portfolio." />
+    <meta name="description" content="Bharath Kumar AR S — Web Developer & Software Engineer Portfolio. Specialist in modern web development, SEO optimization, and high-performance websites." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bharath Kumar AR S | Developer Portfolio</title>
+    <title>Bharath Kumar AR S | Software &amp; Web Developer</title>
   </head>
   <body>
+    <!-- Floating Navbar -->
     <nav class="nav container">
-      <a class="brand" href="#hero">BHARATH.DEV</a>
+      <a class="brand" href="#hero">
+        <span class="brand-dot"></span>
+        <span>BHARATH</span>.DEV
+      </a>
       <div class="nav-links">
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </div>
-      <button id="theme-toggle" aria-label="Toggle theme">☀</button>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">☀</button>
+      </div>
     </nav>
 
     <main>
-      <!-- Hero -->
+      <!-- Hero Section -->
       <section id="hero" class="hero container">
-        <img class="portrait" src="developer-profile-photo.png" alt="Bharath Kumar AR S" />
-        <p class="eyebrow">Software Developer</p>
-        <h1>Bharath Kumar <span>AR S</span></h1>
+        <div class="avatar-wrapper">
+          <img class="portrait" src="developer-profile-photo.png" alt="Bharath Kumar AR S" />
+          <div class="status-badge">
+            <span class="status-indicator"></span>
+            Available for Opportunities
+          </div>
+        </div>
+
+        <div class="eyebrow">
+          <span>Website &amp; Software Developer</span>
+        </div>
+
+        <h1>
+          Building fast, scalable &amp;<br />
+          <span class="gradient-text">high-impact web products.</span>
+        </h1>
+
         <p class="intro">
-          A dedicated enthusiast who loves challenging work. Passionate about
-          improving every day and bringing fresh perspective and dedication to
-          every project.
+          Hi, I'm <strong>Bharath Kumar AR S</strong>. A detail-oriented Website Developer at Syncfusion Technologies specializing in ASP.NET Core, modern static-site architectures (Astro, Gatsby), full-cycle deployment, and technical SEO growth.
         </p>
+
         <div class="actions">
-          <a class="button" href="#projects">View My Work</a>
-          <a class="button outline" href="#contact">Let's Talk</a>
+          <a class="button" href="#projects">
+            Explore Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a class="button outline" href="#contact">Let's Connect</a>
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills Section -->
       <section id="skills" class="container section">
         <header class="section-heading">
-          <p class="eyebrow">Expertise</p>
-          <h2>My <span>Specialties</span></h2>
+          <div class="eyebrow">Areas of Expertise</div>
+          <h2>Technical <span>Specialties</span></h2>
         </header>
+
         <div class="cards">
+          <!-- Web Development -->
           <article class="card">
+            <div class="card-icon">⚡</div>
             <h3>Web Development</h3>
             <ul>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>ASP.NET Core</li>
-              <li>WordPress</li>
-              <li>Astro &amp; Gatsby (SSG)</li>
-              <li>Python &amp; Java (Core)</li>
-              <li>SQL &amp; Database Management</li>
-              <li>SDLC &amp; Version Control (Git)</li>
+              <li>HTML5, CSS3, Modern JavaScript</li>
+              <li>ASP.NET Core Applications</li>
+              <li>WordPress Customization &amp; CMS</li>
+              <li>Astro &amp; Gatsby (Static Site Gen)</li>
+              <li>Python &amp; Java (Core OOP)</li>
+              <li>SQL &amp; Database Architecture</li>
+              <li>Git, GitHub &amp; CI/CD Pipelines</li>
             </ul>
           </article>
+
+          <!-- SEO & Optimization -->
           <article class="card">
-            <h3>SEO &amp; Digital Optimization</h3>
+            <div class="card-icon">📈</div>
+            <h3>SEO &amp; Growth</h3>
             <ul>
-              <li>Google Search Console</li>
+              <li>Google Search Console Management</li>
               <li>Bing Webmaster Tools</li>
-              <li>Semrush</li>
-              <li>Screaming Frog SEO Spider</li>
-              <li>Site Audits &amp; Optimization</li>
-              <li>Media Relations &amp; Outreach</li>
+              <li>Semrush Competitive Analysis</li>
+              <li>Screaming Frog SEO Crawls</li>
+              <li>Technical SEO Audits &amp; Core Web Vitals</li>
+              <li>Media Relations &amp; PR Link Strategy</li>
             </ul>
           </article>
+
+          <!-- Hosting & QA Testing -->
           <article class="card">
-            <h3>Hosting &amp; QA Testing</h3>
+            <div class="card-icon">🛡️</div>
+            <h3>Infrastructure &amp; QA</h3>
             <ul>
               <li>End-to-End Website Deployment</li>
-              <li>DNS &amp; Domain Management</li>
-              <li>SiteGround &amp; Cloud Hosting</li>
-              <li>User Acceptance Testing (UAT)</li>
+              <li>DNS Records &amp; Domain Management</li>
+              <li>SiteGround &amp; Cloud Web Hosting</li>
               <li>Cross-Browser Testing (LambdaTest)</li>
-              <li>Lead Capture &amp; Form Workflows</li>
+              <li>User Acceptance Testing (UAT)</li>
+              <li>Lead Capture &amp; Form Pipelines</li>
             </ul>
           </article>
+
+          <!-- Soft Skills & Focus -->
           <article class="card">
-            <h3>Soft Skills &amp; Interests</h3>
+            <div class="card-icon">🎯</div>
+            <h3>Professional Strengths</h3>
             <ul>
-              <li>Communication &amp; Team Collaboration</li>
+              <li>Cross-Functional Team Collaboration</li>
               <li>Analytical Thinking &amp; Problem Solving</li>
-              <li>Time Management &amp; Adaptability</li>
-              <li>Singing, Music &amp; Chess</li>
+              <li>Fast Turnaround &amp; Time Management</li>
+              <li>Continuous Learning &amp; Clean Code</li>
+              <li>Chess Strategy &amp; Musical Interests</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- Projects Section -->
       <section id="projects" class="container section">
         <header class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Featured <span>Projects</span></h2>
+          <div class="eyebrow">Featured Work</div>
+          <h2>Selected <span>Projects</span></h2>
         </header>
+
         <div class="cards">
+          <!-- Project 1 -->
           <article class="card project">
-            <small>PROJECT 01</small>
-            <h3>Online Library Management System</h3>
-            <p>Simplifies and makes easier the management of books in a library.</p>
+            <div>
+              <div class="project-meta">
+                <small>PROJECT // 01</small>
+              </div>
+              <h3>Online Library Management System</h3>
+              <p>An enterprise-grade system designed to streamline and automate book cataloging, circulation tracking, and member records with an intuitive interface.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Database Design</span>
+              <span class="tag">Web Architecture</span>
+              <span class="tag">CRUD</span>
+            </div>
           </article>
+
+          <!-- Project 2 -->
           <article class="card project">
-            <small>PROJECT 02</small>
-            <h3>Course Explorer System</h3>
-            <p>Guides students completing class 12 through higher-study options.</p>
+            <div>
+              <div class="project-meta">
+                <small>PROJECT // 02</small>
+              </div>
+              <h3>Course Explorer System</h3>
+              <p>A comprehensive guidance platform enabling students completing secondary education to navigate curriculum choices, university tracks, and career opportunities.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Interactive UI</span>
+              <span class="tag">Filtering &amp; Search</span>
+              <span class="tag">Frontend</span>
+            </div>
           </article>
+
+          <!-- Project 3 -->
           <article class="card project">
-            <small>PROJECT 03</small>
-            <h3>Diabetic Retinal Disease Prediction</h3>
-            <p>Predicts whether retinal samples are affected by diabetic retinopathy.</p>
+            <div>
+              <div class="project-meta">
+                <small>PROJECT // 03</small>
+              </div>
+              <h3>Diabetic Retinal Disease Prediction</h3>
+              <p>An intelligent computer vision system leveraging machine learning algorithms to diagnose diabetic retinopathy in retinal fundus photography with clinical precision.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Medical AI</span>
+            </div>
           </article>
         </div>
       </section>
@@ -119,62 +187,86 @@
       <!-- Experience & Education -->
       <section id="experience" class="container section">
         <header class="section-heading">
-          <p class="eyebrow">Career</p>
-          <h2>Experience & <span>Education</span></h2>
+          <div class="eyebrow">Career Pathway</div>
+          <h2>Experience &amp; <span>Education</span></h2>
         </header>
+
         <div class="timeline-grid">
-          <div>
-            <h3>Experience</h3>
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <h3>💼 Professional Journey</h3>
             <article class="timeline">
-              <small>Jan 2025 - Present</small>
+              <small>JAN 2025 – PRESENT</small>
               <h4>Syncfusion Technologies</h4>
               <strong>Website Developer</strong>
-              <p>Leading end-to-end web initiatives including enterprise ASP.NET Core account platforms, custom WordPress implementations, and static site architectures using Astro and Gatsby. Managing domain setups, SiteGround hosting, form pipelines, SEO auditing with Google Search Console, Bing Webmaster, Semrush, and Screaming Frog, as well as cross-browser validation via LambdaTest and UAT testing.</p>
+              <p>Orchestrating end-to-end web initiatives including ASP.NET Core accounts, custom WordPress environments, and static-site architectures built with Astro &amp; Gatsby. Managing domain setups, SiteGround hosting, technical SEO (GSC, Bing Webmaster, Semrush, Screaming Frog), and cross-browser quality assurance using LambdaTest and UAT cycles.</p>
             </article>
+
             <article class="timeline">
-              <small>Oct 2023 - Nov 2023</small>
+              <small>OCT 2023 – NOV 2023</small>
               <h4>OctaNet SW Services</h4>
               <strong>Web Developer Intern</strong>
-              <p>Completed an online web development internship program.</p>
+              <p>Successfully completed an intensive web development internship, collaborating on frontend deliverables, layout optimization, and interactive client-side interfaces.</p>
             </article>
           </div>
-          <div>
-            <h3>Education</h3>
+
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <h3>🎓 Academic Background</h3>
             <article class="timeline">
-              <small>2020 - 2024</small>
-              <h4>University College of Engineering, Anna University</h4>
-              <p>B.E. Computer Science &amp; Engineering · CGPA 8.099</p>
+              <small>2020 – 2024</small>
+              <h4>Anna University (UCET)</h4>
+              <strong>B.E. Computer Science &amp; Engineering</strong>
+              <p>Graduated with a stellar 8.099 CGPA. Strong focus on software engineering, data structures, algorithms, and web technologies.</p>
             </article>
+
             <article class="timeline">
-              <small>2018 - 2020</small>
+              <small>2018 – 2020</small>
               <h4>DAV BHEL School Ranipet</h4>
-              <p>AISSCE · 75%</p>
+              <strong>Higher Secondary (AISSCE) · 75%</strong>
+              <p>Core curriculum in Computer Science, Mathematics, and Physical Sciences.</p>
             </article>
+
             <article class="timeline">
               <small>2018</small>
               <h4>Our Lady's Matriculation School</h4>
-              <p>SSLC · 89%</p>
+              <strong>Secondary School Leaving Certificate (SSLC) · 89%</strong>
+              <p>Foundation in mathematics, sciences, and problem-solving excellence.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- Contact Section -->
       <section id="contact" class="container section">
-        <div class="contact card">
-          <p class="eyebrow">Let's connect</p>
-          <h2>Get in <span>Touch</span></h2>
-          <p>I am a good communicator, public speaker, and an excellent team player ready to contribute.</p>
+        <div class="contact-card">
+          <div class="eyebrow">Let's Connect</div>
+          <h2>Ready to build something <span>exceptional?</span></h2>
+          <p>
+            Whether you have an upcoming project, a collaboration opportunity, or just want to discuss modern web technologies and SEO strategies, I'd love to hear from you.
+          </p>
+
           <div class="contact-links">
-            <a href="mailto:bharathkumarars@gmail.com">bharathkumarars@gmail.com</a>
-            <a href="tel:+919488534631">+91 94885 34631</a>
-            <a href="https://www.linkedin.com/in/bharath-kumar-ar-s-848a44214/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="contact-item" href="mailto:bharathkumarars@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              bharathkumarars@gmail.com
+            </a>
+            <a class="contact-item" href="tel:+919488534631">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +91 94885 34631
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/bharath-kumar-ar-s-848a44214/" target="_blank" rel="noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn Profile
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>&copy; 2026 Bharath Kumar AR S</footer>
+    <footer>
+      &copy; 2026 Bharath Kumar AR S · Crafted with clean HTML, CSS &amp; JavaScript
+    </footer>
 
     <script src="script.js"></script>
   </body>
