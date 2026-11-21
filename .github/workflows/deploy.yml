@@ -22,27 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Set up Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: AstroSource/package-lock.json
-
-      - name: Install dependencies
-        working-directory: AstroSource
-        run: npm ci
-
-      - name: Build
-        working-directory: AstroSource
-        run: |
-          npm run build
-          test -f dist/index.html
-
-      - name: Ensure custom domain file
-        run: printf '%s\n' 'sathyamusicalstudio.in' > AstroSource/dist/CNAME
+        uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -50,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: AstroSource/dist
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
