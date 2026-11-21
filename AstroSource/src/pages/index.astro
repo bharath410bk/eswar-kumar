@@ -1,0 +1,94 @@
+---
+import '../styles/global.css';
+const skills = [
+  ['Technological Skills', ['HTML, CSS', 'SQL', 'SDLC', 'Python', 'Java (Core)', 'ASP.NET Core', 'WordPress', 'MS-Office']],
+  ['Soft Skills', ['Observation', 'Decision Making', 'Communication', 'Multi-tasking', 'Time Management', 'Volunteering']],
+  ['Interests', ['Singing', 'Listening to music', 'Chess']],
+];
+const projects = [
+  ['01', 'Online Library Management System', 'Simplifies and makes easier the management of books in a library.'],
+  ['02', 'Course Explorer System', 'Guides students completing class 12 through higher-study options.'],
+  ['03', 'Diabetic Retinal Disease Prediction', 'Predicts whether retinal samples are affected by diabetic retinopathy.'],
+];
+const experience = [
+  ['Jan 2025 - Present', 'Syncfusion', 'Website Developer', 'Managing two ASP.NET Core account projects and front/back-end WordPress environments.'],
+  ['Oct 2023 - Nov 2023', 'OctaNet SW Services', 'Web Developer Intern', 'Completed an online web development internship program.'],
+];
+const education = [
+  ['2020 - 2024', 'University College of Engineering, Anna University', 'B.E. Computer Science & Engineering · CGPA 8.099'],
+  ['2018 - 2020', 'DAV BHEL School Ranipet', 'AISSCE · 75%'],
+  ['2018', "Our Lady's Matriculation School", 'SSLC · 89%'],
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Bharath Kumar AR S — Website Developer and Software Developer portfolio." />
+    <title>Bharath Kumar AR S | Developer Portfolio</title>
+  </head>
+  <body>
+    <nav class="nav container">
+      <a class="brand" href="#hero">BHARATH.DEV</a>
+      <div class="nav-links">
+        <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle theme">☀</button>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero container">
+        <img class="portrait" src="/developer-profile-photo.png" alt="Bharath Kumar AR S" />
+        <p class="eyebrow">Software Developer</p>
+        <h1>Bharath Kumar <span>AR S</span></h1>
+        <p class="intro">A dedicated enthusiast who loves challenging work. Passionate about improving every day and bringing fresh perspective and dedication to every project.</p>
+        <div class="actions"><a class="button" href="#projects">View My Work</a><a class="button outline" href="#contact">Let's Talk</a></div>
+      </section>
+
+      <section id="skills" class="container section">
+        <header class="section-heading"><p class="eyebrow">Expertise</p><h2>My <span>Specialties</span></h2></header>
+        <div class="cards">
+          {skills.map(([title, items]) => (
+            <article class="card"><h3>{title}</h3><ul>{items.map(item => <li>{item}</li>)}</ul></article>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <header class="section-heading"><p class="eyebrow">Selected work</p><h2>Featured <span>Projects</span></h2></header>
+        <div class="cards">
+          {projects.map(([number, title, description]) => (
+            <article class="card project"><small>PROJECT {number}</small><h3>{title}</h3><p>{description}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section id="experience" class="container section">
+        <header class="section-heading"><p class="eyebrow">Career</p><h2>Experience & <span>Education</span></h2></header>
+        <div class="timeline-grid">
+          <div><h3>Experience</h3>{experience.map(([year, title, role, description]) => <article class="timeline"><small>{year}</small><h4>{title}</h4><strong>{role}</strong><p>{description}</p></article>)}</div>
+          <div><h3>Education</h3>{education.map(([year, title, description]) => <article class="timeline"><small>{year}</small><h4>{title}</h4><p>{description}</p></article>)}</div>
+        </div>
+      </section>
+
+      <section id="contact" class="container section">
+        <div class="contact card"><p class="eyebrow">Let's connect</p><h2>Get in <span>Touch</span></h2><p>I am a good communicator, public speaker, and an excellent team player ready to contribute.</p><div class="contact-links"><a href="mailto:bharathkumarars@gmail.com">bharathkumarars@gmail.com</a><a href="tel:+919488534631">+91 94885 34631</a><a href="https://www.linkedin.com/in/bharath-kumar-ar-s-848a44214/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+      </section>
+    </main>
+
+    <footer>© 2026 Bharath Kumar AR S · Built with Astro</footer>
+
+    <script>
+      const button = document.querySelector('#theme-toggle');
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+      button?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      });
+    </script>
+  </body>
+</html>
